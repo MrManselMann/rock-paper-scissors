@@ -2,7 +2,7 @@ import tkinter as tk
 from PIL import Image, ImageTk
 from game import play_rock_paper_scissors
 import random
-
+#this was all chat gpt'd it was to hard to do on my own
 class RockPaperScissorsApp:
     def __init__(self, root):
         self.root = root
