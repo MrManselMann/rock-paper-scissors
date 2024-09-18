@@ -2,7 +2,6 @@ import cv2
 import mediapipe as mp
 import math
 import random
-# Initialize MediaPipe Hands and Drawing Utils
 def play_rock_paper_scissors():
     mp_hands = mp.solutions.hands
     mp_drawing = mp.solutions.drawing_utils
@@ -14,7 +13,6 @@ def play_rock_paper_scissors():
     counter2 = 0
     beep = False
     palm_was_visible = False
-    # Instantiate Hands object once
     hands = mp_hands.Hands()
 
     def get_landmark_coordinates(landmark_number, frame):
@@ -89,7 +87,7 @@ def play_rock_paper_scissors():
                 break
 
 
-            # Break the loop if 'q' is pressed
+        
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     outcomes = ["tie", "win", "lose"]
